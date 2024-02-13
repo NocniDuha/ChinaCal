@@ -15,14 +15,14 @@ const animal = [
 
 const element = ['kovu', 'kovu', 'vody','vody', 'dřeva', 'dřeva' , 'ohně', 'ohně', 'země', 'země'];
 
-// Try edit me
+// Catch input and find animal and element 
 document.getElementById("try").addEventListener("click", function year () {
                    var year = document.getElementById("year").value;    
 var mod = year%12;
 var e = year%10;
   
-if (isNaN(year) == true || year === "") {
-  document.getElementById("result").innerHTML = "Zadejte rok v číselnem formátu."} 
+if (isNaN(year) == true || year == "") {
+  document.getElementById("result").innerHTML = "Zadejte rok v číselném formátu."} 
 else {
   var result = "Rok "+year+" je ve znamení "+animal[mod]+" s živlem "+element[e];
   document.getElementById("result").innerHTML = result} });
